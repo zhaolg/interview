@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/message/index",
+    "pages/my/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EE82EE",
+    "navigationBarTitleText": "面试帮",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#000000",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "box-shadow": "0 0 6px 0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/033.png",
+        "selectedIconPath": "/images/003.png"
+      },
+      {
+        "pagePath": "pages/message/index",
+        "text": "知识库",
+        "iconPath": "/images/022.png",
+        "selectedIconPath": "/images/002.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "/images/011.png",
+        "selectedIconPath": "/images/001.png"
+      }
+    ]
+  }
+}

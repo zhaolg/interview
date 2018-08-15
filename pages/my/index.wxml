@@ -1,0 +1,38 @@
+<view class="userinfo">
+  <image mode="widthFix" wx:if="{{userInfo && userInfo.avatarUrl}}" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  <view class="iser-info-box">
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text class="userinfo-score" wx:if="{{userInfo.gender==1}}">♂ {{userInfo.country}} {{userInfo.province}}</text>
+    <text class="userinfo-score" wx:if="{{userInfo.gender==2}}">♀ {{userInfo.country}} {{userInfo.province}}</text>
+  </view>
+</view>
+<view class="userinfo-item" bindtap="myUserInfo">
+  <image src="../../images/my/my_info.png"></image>
+  <view>我的简历
+    <image src="../../images/my/right-icon.png" />
+  </view>
+</view>
+<view class="userinfo-item" bindtap="myblance">
+  <image src="../../images/my/blance.png"></image>
+  <view> 我的面试
+    <text>（{{balance}}个）</text>
+    <image src="../../images/my/right-icon.png" />
+  </view>
+</view>
+<view class="userinfo-item" bindtap="myapplicat">
+  <image src="../../images/my/like.png"></image>
+  <view> 面试邀请
+    <text>（9）</text>
+    <image src="../../images/my/right-icon.png" />
+  </view>
+</view>
+<view class="userinfo-item" bindtap="aboutme">
+  <image src="../../images/my/compar.png"></image>
+  <view> 关于面试帮
+    <image src="../../images/my/right-icon.png" />
+  </view>
+</view>
+<view style="height:50rpx;background: #eee;width:100%;"></view>
+<view class="my-item" style="border:none;padding:0rpx;margin:0rpx;background:none;border:none;height:auto;line-height:auto;">
+  <button type="{{actionType}}" bindtap="relogin" open-type="getUserInfo">{{actionText}}</button>
+</view>

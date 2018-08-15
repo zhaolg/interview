@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "经典宝典",
+  "usingComponents": {
+    "zan-panel": "/dist/panel/index",
+    "doc-page": "/components/doc-page/index",
+    "zan-button": "/dist/btn/index",
+    "zan-button-group": "/dist/btn-group/index"
+  }
+}

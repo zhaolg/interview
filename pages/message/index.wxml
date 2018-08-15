@@ -1,0 +1,22 @@
+<doc-page title="经典面试题" without-padding>
+
+  <zan-panel title="{{item.title}}" class="panel-example">
+    <view style="padding: 15px;">{{item.option_1}}</view>
+    <view style="padding: 15px;">{{item.option_2}}</view>
+    <view style="padding: 15px;">{{item.option_3}}</view>
+    <view style="padding: 15px;">{{item.option_4}}</view>
+  </zan-panel>
+
+   <zan-panel title="{{title}}" class="panel-example">
+       <view style="padding: 15px;" class="test">{{text}}</view>
+   </zan-panel>
+
+  <zan-panel title=" ">
+    <zan-button-group>
+      <zan-button style='float:left;' size="small" type="primary" class="zan-btn" bindtap='pgUp' >上一题</zan-button>
+      <zan-button style='margin-left:20%;' size="small" type="danger" class="zan-btn" bindtap='showAnswer' data-id="{{item.id}}" >查看答案</zan-button>
+      <zan-button style='float:right;' size="small" type="primary" class="zan-btn" bindtap='pgDn'>下一题</zan-button>
+    </zan-button-group>
+  </zan-panel>
+
+</doc-page>
